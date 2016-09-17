@@ -4,9 +4,9 @@
   <subtitle>My journey to full stack</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://bookcaseballpen.github.io/"/>
+  <link href="https://bookcaseballpen.github.io/"/>
   <updated>2016-09-17T05:41:29.699Z</updated>
-  <id>http://bookcaseballpen.github.io/</id>
+  <id>https://bookcaseballpen.github.io/</id>
   
   <author>
     <name>Sam Wang</name>
@@ -17,8 +17,8 @@
   
   <entry>
     <title>My second post</title>
-    <link href="http://bookcaseballpen.github.io/2016/09/17/My-second-post/"/>
-    <id>http://bookcaseballpen.github.io/2016/09/17/My-second-post/</id>
+    <link href="https://bookcaseballpen.github.io/2016/09/17/My-second-post/"/>
+    <id>https://bookcaseballpen.github.io/2016/09/17/My-second-post/</id>
     <published>2016-09-17T05:41:29.000Z</published>
     <updated>2016-09-17T05:41:29.699Z</updated>
     
@@ -31,8 +31,8 @@
   
   <entry>
     <title>How to use hexo to host your blog on github (On Linux Mint 17.3 Rosa)</title>
-    <link href="http://bookcaseballpen.github.io/2016/09/17/My-first-post/"/>
-    <id>http://bookcaseballpen.github.io/2016/09/17/My-first-post/</id>
+    <link href="https://bookcaseballpen.github.io/2016/09/17/My-first-post/"/>
+    <id>https://bookcaseballpen.github.io/2016/09/17/My-first-post/</id>
     <published>2016-09-16T16:18:27.000Z</published>
     <updated>2016-09-17T06:49:49.427Z</updated>
     
@@ -66,20 +66,20 @@
     </summary>
     
     
-      <category term="hexo" scheme="http://bookcaseballpen.github.io/tags/hexo/"/>
+      <category term="hexo" scheme="https://bookcaseballpen.github.io/tags/hexo/"/>
     
-      <category term="github" scheme="http://bookcaseballpen.github.io/tags/github/"/>
+      <category term="github" scheme="https://bookcaseballpen.github.io/tags/github/"/>
     
-      <category term="blog" scheme="http://bookcaseballpen.github.io/tags/blog/"/>
+      <category term="blog" scheme="https://bookcaseballpen.github.io/tags/blog/"/>
     
-      <category term="markdown" scheme="http://bookcaseballpen.github.io/tags/markdown/"/>
+      <category term="markdown" scheme="https://bookcaseballpen.github.io/tags/markdown/"/>
     
   </entry>
   
   <entry>
     <title>Hello World</title>
-    <link href="http://bookcaseballpen.github.io/2016/09/17/hello-world/"/>
-    <id>http://bookcaseballpen.github.io/2016/09/17/hello-world/</id>
+    <link href="https://bookcaseballpen.github.io/2016/09/17/hello-world/"/>
+    <id>https://bookcaseballpen.github.io/2016/09/17/hello-world/</id>
     <published>2016-09-16T16:14:29.259Z</published>
     <updated>2016-09-16T16:14:29.259Z</updated>
     
