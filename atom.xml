@@ -34,7 +34,7 @@
     <link href="https://bookcaseballpen.github.io/2016/09/17/My-first-post/"/>
     <id>https://bookcaseballpen.github.io/2016/09/17/My-first-post/</id>
     <published>2016-09-16T16:18:27.000Z</published>
-    <updated>2016-09-17T08:32:16.465Z</updated>
+    <updated>2016-09-17T08:41:50.001Z</updated>
     
     <content type="html"><![CDATA[<p>Long time ago, I intented to create my own static blog on github. I tried jekyll and octopress at beginning of this year. Hoever it just not the feel of blog. It kind of short simplicity. I am not against to use ruby. As a Front end developer now, I used ruby quite alot for sass and compass. I also used leanote and wiznote for personal blog building. Still I feels there is something not correct. </p>
 <p>Unti I find vimWiki, I realized the language for bloging is not convenient for me. As a programmer, I prefer to note down my thoughts as fast as possible. Markdown with TOC seems is perfect for me. Then I recorded jekyll also support markdown. After the second time of investigation in jekyll, I found out jekyll is not convenient for markdown indexing and generating TOC. I know They can be archieve by installing generators. In the time of search around, hexo falls into my eyes. It&#x2019;s combination of all functions I am looking for, And it&#x2019;s build on Nodejs, this is a plus point for me. =) </p>
@@ -58,7 +58,7 @@
 <p>You will be asked to key in username and password if you choose to use http repo url.</p>
 <h1 id="msc"><a href="#Msc" class="headerlink" title="Msc"></a>Msc</h1><p>There are few functions I added to my blog. Some of them took me few time to<br>figure it out how they works. List them down here, hope can save your time.</p>
 <h2 id="enable-disqus-comment-prompt"><a href="#Enable-Disqus-Comment-prompt" class="headerlink" title="Enable Disqus Comment prompt"></a>Enable Disqus Comment prompt</h2><p>the disqus short name is not your username or display name. It&#x2019;s the name in<br>your url right before the &#x2018;disqus.com&#x2019;, this one really confused me for a<br>awhile.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&lt;themes/indigo/_config.yml&gt;</div><div class="line">disqus_shortname: your_disques_shortname</div></pre></td></tr></table></figure></p>
-<p>Hope this post can help your, I will update this on the way of using it. Leave<br>your comments if you need any assistant.</p>
+<p>Hope this post can help you. I will update this on the way of using it. Leave<br>your comments if you need any assistant.</p>
 ]]></content>
     
     <summary type="html">
