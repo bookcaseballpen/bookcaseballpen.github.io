@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>OpenSource Bookcase</title>
+  <subtitle>My journey to full stack</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://bookcaseballpen.github.io/"/>
+  <updated>2016-09-17T05:41:29.699Z</updated>
+  <id>http://bookcaseballpen.github.io/</id>
+  
+  <author>
+    <name>Sam Wang</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>My second post</title>
+    <link href="http://bookcaseballpen.github.io/2016/09/17/My-second-post/"/>
+    <id>http://bookcaseballpen.github.io/2016/09/17/My-second-post/</id>
+    <published>2016-09-17T05:41:29.000Z</published>
+    <updated>2016-09-17T05:41:29.699Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>How to use hexo to host your blog on github (On Linux Mint 17.3 Rosa)</title>
+    <link href="http://bookcaseballpen.github.io/2016/09/17/My-first-post/"/>
+    <id>http://bookcaseballpen.github.io/2016/09/17/My-first-post/</id>
+    <published>2016-09-16T16:18:27.000Z</published>
+    <updated>2016-09-17T06:49:49.427Z</updated>
+    
+    <content type="html"><![CDATA[<p>Long time ago, I intented to create my own static blog on github. I tried jekyll and octopress at beginning of this year. Hoever it just not the feel of blog. It kind of short simplicity. I am not against to use ruby. As a Front end developer now, I used ruby quite alot for sass and compass. I also used leanote and wiznote for personal blog building. Still I feels there is something not correct. </p>
+<p>Unti I find vimWiki, I realized theen  laguage for bloging is not convient for me. As a programmer, I prefer to note down my thoughts as fast as possible. Markdown with TOC seems is perfect for me. Then I recorded jekyll also support markdown. After the second time of investigation in jekyll, I found out jekyll is not convinient for markdown indexing and generating TOC. I know They can be archieve by installing generators. Their hexo falls into my eyes. It&#x2019;s combination of all functions I am looking. And it&#x2019;s build on Nodejs, this is a plus for me. </p>
+<p>tl:dr</p>
+<h1 id="install-hexo"><a href="#Install-Hexo" class="headerlink" title="Install Hexo"></a>Install Hexo</h1><h2 id="how-to-install"><a href="#How-to-install" class="headerlink" title="How to install"></a>How to install</h2><p>follow the user guild, the installation of Hexo is very standard NodeJs installation. make sure your have NodeJs installed first.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install -g hexo</div></pre></td></tr></table></figure></p>
+<h2 id="init-your-project"><a href="#Init-your-project" class="headerlink" title="Init your project"></a>Init your project</h2><p>create a new folder and inside the folder, init the hexo project.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo init</div></pre></td></tr></table></figure></p>
+<h2 id="see-your-blog"><a href="#See-your-blog" class="headerlink" title="See your blog"></a>See your blog</h2><p>start your hexo server, you can see your hexo is runing on localhost:4000</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo server</div></pre></td></tr></table></figure>
+<h2 id="your-first-post"><a href="#Your-first-post" class="headerlink" title="Your first post"></a>Your first post</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo new &quot;your title&quot;</div></pre></td></tr></table></figure>
+<p>Now your blog is upto running. How simple it is. ~o~</p>
+<h1 id="setup-theme"><a href="#Setup-Theme" class="headerlink" title="Setup Theme"></a>Setup Theme</h1><p>Now is time to beautify your blog. I will not list down the common markdown syntex You can browser through the <a href="https://hexo.io/themes" target="_blank" rel="external">hexo themes</a>. I need a theme has better navigation, tags system and also support internal search. I found this theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank" rel="external"> indigo </a> suits all my needs. </p>
+<h2 id="clone-your-theme"><a href="#Clone-your-theme" class="headerlink" title="Clone your theme"></a>Clone your theme</h2><p>Copy the theme into your themes<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git clone https://github.com/yscoder/hexo-theme-indigo /themes/indigo/</div></pre></td></tr></table></figure></p>
+<h2 id="shift-to-new-theme"><a href="#Shift-to-new-theme" class="headerlink" title="Shift to new theme"></a>Shift to new theme</h2><p>You only need to modify the &#x2018;_config.yml&#x2019; to enable the new theme<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">theme: indigo</div></pre></td></tr></table></figure></p>
+<h2 id="install-all-necessary-plugs"><a href="#Install-all-necessary-plugs" class="headerlink" title="Install all necessary plugs"></a>Install all necessary plugs</h2><p>To enable the theme default functions, style, feed rss, json content and side<br>navigator, you need to install following plugins.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ npm install --save hexo-renderer-less hexo-generator-feed</div><div class="line">hexo-generator-json-content  hexo-toc</div></pre></td></tr></table></figure></p>
+<h2 id="enable-tags"><a href="#Enable-tags" class="headerlink" title="Enable tags"></a>Enable tags</h2><p>Create a page tag and modify it to enable the them tags.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo new page tags</div></pre></td></tr></table></figure></p>
+<p>Modify the create tags page, replace the content as below.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">layout: tags</div><div class="line">noDate: true</div><div class="line">comments: false</div><div class="line">---</div></pre></td></tr></table></figure></p>
+<p>Now you have your first nice theme. Because this theme is created by a chinese<br>author, you might need to change system chinese instructions. It wont take you<br>too much time compare to create your own theme. You can also find your own<br>prefered theme on hexo website. The installation takes the same steps.</p>
+<h1 id="deploy-to-github"><a href="#Deploy-to-github" class="headerlink" title="Deploy to github"></a>Deploy to github</h1><p>The Deployment in hexo is so simple to do. You only need to specify the deploy in<br>your _config.yml, then you are ready to go. I prefer to host my blog on my</p>
+<h2 id="setup-deployment"><a href="#Setup-deployment" class="headerlink" title="Setup deployment"></a>Setup deployment</h2><p>github account.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">&lt;_config.yml&gt;</div><div class="line">Deploy:</div><div class="line">    type: git</div><div class="line">    repor: your repo url // you can choose ssh or http repo url</div><div class="line">    branch: master // you can choose to publish to your gh page if you have</div><div class="line">    more then one blog on your github account.</div></pre></td></tr></table></figure></p>
+<h2 id="deploy"><a href="#Deploy" class="headerlink" title="Deploy"></a>Deploy</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate &amp;&amp; hexo deploy</div></pre></td></tr></table></figure>
+<p>You will be asked to key in username and password if you choose to use http repo url.</p>
+<h1 id="msc"><a href="#Msc" class="headerlink" title="Msc"></a>Msc</h1><p>##</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Long time ago, I intented to create my own static blog on github. I tried jekyll and octopress at beginning of this year. Hoever it just 
+    
+    </summary>
+    
+    
+      <category term="hexo" scheme="http://bookcaseballpen.github.io/tags/hexo/"/>
+    
+      <category term="github" scheme="http://bookcaseballpen.github.io/tags/github/"/>
+    
+      <category term="blog" scheme="http://bookcaseballpen.github.io/tags/blog/"/>
+    
+      <category term="markdown" scheme="http://bookcaseballpen.github.io/tags/markdown/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://bookcaseballpen.github.io/2016/09/17/hello-world/"/>
+    <id>http://bookcaseballpen.github.io/2016/09/17/hello-world/</id>
+    <published>2016-09-16T16:14:29.259Z</published>
+    <updated>2016-09-16T16:14:29.259Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+<h2 id="quick-start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
+<h3 id="run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
+<h3 id="generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
+<h3 id="deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
